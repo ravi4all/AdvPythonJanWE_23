@@ -10,3 +10,14 @@ def registerUser(name, email, password):
     user = User(name, email, password)
     users.append(user)
     return "Registered Successfully..."
+
+def validateEmail(email):
+    for i in range(len(users)):
+        if users[i].email == email:
+            return "yes"
+    else:
+        return "no"
+
+def loginUser(email, pwd):
+    pass
+
